@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE2760A51832702F0046BB9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2760A41832702F0046BB9C /* Foundation.framework */; };
+		AE2760A71832702F0046BB9C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2760A61832702F0046BB9C /* CoreGraphics.framework */; };
+		AE2760A91832702F0046BB9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2760A81832702F0046BB9C /* UIKit.framework */; };
+		AE2760AB1832702F0046BB9C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2760AA1832702F0046BB9C /* SpriteKit.framework */; };
+		AE2760B11832702F0046BB9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE2760AF1832702F0046BB9C /* InfoPlist.strings */; };
+		AE2760B31832702F0046BB9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2760B21832702F0046BB9C /* main.m */; };
+		AE2760B71832702F0046BB9C /* SKBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2760B61832702F0046BB9C /* SKBAppDelegate.m */; };
+		AE2760BA1832702F0046BB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE2760B81832702F0046BB9C /* Main.storyboard */; };
+		AE2760BD1832702F0046BB9C /* SKBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2760BC1832702F0046BB9C /* SKBViewController.m */; };
+		AE2760C01832702F0046BB9C /* SKBMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2760BF1832702F0046BB9C /* SKBMyScene.m */; };
+		AE2760C21832702F0046BB9C /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2760C11832702F0046BB9C /* Spaceship.png */; };
+		AE2760C41832702F0046BB9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE2760C31832702F0046BB9C /* Images.xcassets */; };
+		AE2760CB1832702F0046BB9C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2760CA1832702F0046BB9C /* XCTest.framework */; };
+		AE2760CC1832702F0046BB9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2760A41832702F0046BB9C /* Foundation.framework */; };
+		AE2760CD1832702F0046BB9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2760A81832702F0046BB9C /* UIKit.framework */; };
+		AE2760D5183270300046BB9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE2760D3183270300046BB9C /* InfoPlist.strings */; };
+		AE2760D7183270300046BB9C /* SKBreakoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2760D6183270300046BB9C /* SKBreakoutTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE2760CE183270300046BB9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE2760991832702F0046BB9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE2760A01832702F0046BB9C;
+			remoteInfo = SKBreakout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE2760A11832702F0046BB9C /* SKBreakout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKBreakout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2760A41832702F0046BB9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE2760A61832702F0046BB9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE2760A81832702F0046BB9C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE2760AA1832702F0046BB9C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		AE2760AE1832702F0046BB9C /* SKBreakout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SKBreakout-Info.plist"; sourceTree = "<group>"; };
+		AE2760B01832702F0046BB9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE2760B21832702F0046BB9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE2760B41832702F0046BB9C /* SKBreakout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKBreakout-Prefix.pch"; sourceTree = "<group>"; };
+		AE2760B51832702F0046BB9C /* SKBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBAppDelegate.h; sourceTree = "<group>"; };
+		AE2760B61832702F0046BB9C /* SKBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBAppDelegate.m; sourceTree = "<group>"; };
+		AE2760B91832702F0046BB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE2760BB1832702F0046BB9C /* SKBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBViewController.h; sourceTree = "<group>"; };
+		AE2760BC1832702F0046BB9C /* SKBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBViewController.m; sourceTree = "<group>"; };
+		AE2760BE1832702F0046BB9C /* SKBMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKBMyScene.h; sourceTree = "<group>"; };
+		AE2760BF1832702F0046BB9C /* SKBMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBMyScene.m; sourceTree = "<group>"; };
+		AE2760C11832702F0046BB9C /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		AE2760C31832702F0046BB9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AE2760C91832702F0046BB9C /* SKBreakoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKBreakoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2760CA1832702F0046BB9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AE2760D2183270300046BB9C /* SKBreakoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SKBreakoutTests-Info.plist"; sourceTree = "<group>"; };
+		AE2760D4183270300046BB9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE2760D6183270300046BB9C /* SKBreakoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBreakoutTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE27609E1832702F0046BB9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2760A71832702F0046BB9C /* CoreGraphics.framework in Frameworks */,
+				AE2760A91832702F0046BB9C /* UIKit.framework in Frameworks */,
+				AE2760AB1832702F0046BB9C /* SpriteKit.framework in Frameworks */,
+				AE2760A51832702F0046BB9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2760C61832702F0046BB9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2760CB1832702F0046BB9C /* XCTest.framework in Frameworks */,
+				AE2760CD1832702F0046BB9C /* UIKit.framework in Frameworks */,
+				AE2760CC1832702F0046BB9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE2760981832702F0046BB9C = {
+			isa = PBXGroup;
+			children = (
+				AE2760AC1832702F0046BB9C /* SKBreakout */,
+				AE2760D0183270300046BB9C /* SKBreakoutTests */,
+				AE2760A31832702F0046BB9C /* Frameworks */,
+				AE2760A21832702F0046BB9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE2760A21832702F0046BB9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE2760A11832702F0046BB9C /* SKBreakout.app */,
+				AE2760C91832702F0046BB9C /* SKBreakoutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE2760A31832702F0046BB9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE2760A41832702F0046BB9C /* Foundation.framework */,
+				AE2760A61832702F0046BB9C /* CoreGraphics.framework */,
+				AE2760A81832702F0046BB9C /* UIKit.framework */,
+				AE2760AA1832702F0046BB9C /* SpriteKit.framework */,
+				AE2760CA1832702F0046BB9C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE2760AC1832702F0046BB9C /* SKBreakout */ = {
+			isa = PBXGroup;
+			children = (
+				AE2760B51832702F0046BB9C /* SKBAppDelegate.h */,
+				AE2760B61832702F0046BB9C /* SKBAppDelegate.m */,
+				AE2760B81832702F0046BB9C /* Main.storyboard */,
+				AE2760BB1832702F0046BB9C /* SKBViewController.h */,
+				AE2760BC1832702F0046BB9C /* SKBViewController.m */,
+				AE2760BE1832702F0046BB9C /* SKBMyScene.h */,
+				AE2760BF1832702F0046BB9C /* SKBMyScene.m */,
+				AE2760C11832702F0046BB9C /* Spaceship.png */,
+				AE2760C31832702F0046BB9C /* Images.xcassets */,
+				AE2760AD1832702F0046BB9C /* Supporting Files */,
+			);
+			path = SKBreakout;
+			sourceTree = "<group>";
+		};
+		AE2760AD1832702F0046BB9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE2760AE1832702F0046BB9C /* SKBreakout-Info.plist */,
+				AE2760AF1832702F0046BB9C /* InfoPlist.strings */,
+				AE2760B21832702F0046BB9C /* main.m */,
+				AE2760B41832702F0046BB9C /* SKBreakout-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE2760D0183270300046BB9C /* SKBreakoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE2760D6183270300046BB9C /* SKBreakoutTests.m */,
+				AE2760D1183270300046BB9C /* Supporting Files */,
+			);
+			path = SKBreakoutTests;
+			sourceTree = "<group>";
+		};
+		AE2760D1183270300046BB9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE2760D2183270300046BB9C /* SKBreakoutTests-Info.plist */,
+				AE2760D3183270300046BB9C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE2760A01832702F0046BB9C /* SKBreakout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2760DA183270300046BB9C /* Build configuration list for PBXNativeTarget "SKBreakout" */;
+			buildPhases = (
+				AE27609D1832702F0046BB9C /* Sources */,
+				AE27609E1832702F0046BB9C /* Frameworks */,
+				AE27609F1832702F0046BB9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SKBreakout;
+			productName = SKBreakout;
+			productReference = AE2760A11832702F0046BB9C /* SKBreakout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE2760C81832702F0046BB9C /* SKBreakoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2760DD183270300046BB9C /* Build configuration list for PBXNativeTarget "SKBreakoutTests" */;
+			buildPhases = (
+				AE2760C51832702F0046BB9C /* Sources */,
+				AE2760C61832702F0046BB9C /* Frameworks */,
+				AE2760C71832702F0046BB9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE2760CF183270300046BB9C /* PBXTargetDependency */,
+			);
+			name = SKBreakoutTests;
+			productName = SKBreakoutTests;
+			productReference = AE2760C91832702F0046BB9C /* SKBreakoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE2760991832702F0046BB9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SKB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = 27Walnut;
+				TargetAttributes = {
+					AE2760C81832702F0046BB9C = {
+						TestTargetID = AE2760A01832702F0046BB9C;
+					};
+				};
+			};
+			buildConfigurationList = AE27609C1832702F0046BB9C /* Build configuration list for PBXProject "SKBreakout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE2760981832702F0046BB9C;
+			productRefGroup = AE2760A21832702F0046BB9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE2760A01832702F0046BB9C /* SKBreakout */,
+				AE2760C81832702F0046BB9C /* SKBreakoutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE27609F1832702F0046BB9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2760B11832702F0046BB9C /* InfoPlist.strings in Resources */,
+				AE2760C41832702F0046BB9C /* Images.xcassets in Resources */,
+				AE2760C21832702F0046BB9C /* Spaceship.png in Resources */,
+				AE2760BA1832702F0046BB9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2760C71832702F0046BB9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2760D5183270300046BB9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE27609D1832702F0046BB9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2760B31832702F0046BB9C /* main.m in Sources */,
+				AE2760B71832702F0046BB9C /* SKBAppDelegate.m in Sources */,
+				AE2760BD1832702F0046BB9C /* SKBViewController.m in Sources */,
+				AE2760C01832702F0046BB9C /* SKBMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2760C51832702F0046BB9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2760D7183270300046BB9C /* SKBreakoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE2760CF183270300046BB9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE2760A01832702F0046BB9C /* SKBreakout */;
+			targetProxy = AE2760CE183270300046BB9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE2760AF1832702F0046BB9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2760B01832702F0046BB9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE2760B81832702F0046BB9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2760B91832702F0046BB9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE2760D3183270300046BB9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE2760D4183270300046BB9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE2760D8183270300046BB9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE2760D9183270300046BB9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE2760DB183270300046BB9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKBreakout/SKBreakout-Prefix.pch";
+				INFOPLIST_FILE = "SKBreakout/SKBreakout-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE2760DC183270300046BB9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKBreakout/SKBreakout-Prefix.pch";
+				INFOPLIST_FILE = "SKBreakout/SKBreakout-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AE2760DE183270300046BB9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SKBreakout.app/SKBreakout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKBreakout/SKBreakout-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SKBreakoutTests/SKBreakoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AE2760DF183270300046BB9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SKBreakout.app/SKBreakout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKBreakout/SKBreakout-Prefix.pch";
+				INFOPLIST_FILE = "SKBreakoutTests/SKBreakoutTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE27609C1832702F0046BB9C /* Build configuration list for PBXProject "SKBreakout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2760D8183270300046BB9C /* Debug */,
+				AE2760D9183270300046BB9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE2760DA183270300046BB9C /* Build configuration list for PBXNativeTarget "SKBreakout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2760DB183270300046BB9C /* Debug */,
+				AE2760DC183270300046BB9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE2760DD183270300046BB9C /* Build configuration list for PBXNativeTarget "SKBreakoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2760DE183270300046BB9C /* Debug */,
+				AE2760DF183270300046BB9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE2760991832702F0046BB9C /* Project object */;
+}
