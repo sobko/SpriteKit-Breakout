@@ -24,6 +24,12 @@
 		AE2760CD1832702F0046BB9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2760A81832702F0046BB9C /* UIKit.framework */; };
 		AE2760D5183270300046BB9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE2760D3183270300046BB9C /* InfoPlist.strings */; };
 		AE2760D7183270300046BB9C /* SKBreakoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE2760D6183270300046BB9C /* SKBreakoutTests.m */; };
+		AE2760E2183273180046BB9C /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2760E0183273180046BB9C /* ball.png */; };
+		AE2760E3183273180046BB9C /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2760E1183273180046BB9C /* ball@2x.png */; };
+		AE2760E6183298B50046BB9C /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2760E4183298B50046BB9C /* paddle.png */; };
+		AE2760E7183298B50046BB9C /* paddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE2760E5183298B50046BB9C /* paddle@2x.png */; };
+		AE3B5958183AEB60004569F8 /* brick.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3B5956183AEB60004569F8 /* brick.png */; };
+		AE3B5959183AEB60004569F8 /* brick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3B5957183AEB60004569F8 /* brick@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,12 @@
 		AE2760D2183270300046BB9C /* SKBreakoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SKBreakoutTests-Info.plist"; sourceTree = "<group>"; };
 		AE2760D4183270300046BB9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE2760D6183270300046BB9C /* SKBreakoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKBreakoutTests.m; sourceTree = "<group>"; };
+		AE2760E0183273180046BB9C /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		AE2760E1183273180046BB9C /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
+		AE2760E4183298B50046BB9C /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
+		AE2760E5183298B50046BB9C /* paddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paddle@2x.png"; sourceTree = "<group>"; };
+		AE3B5956183AEB60004569F8 /* brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brick.png; sourceTree = "<group>"; };
+		AE3B5957183AEB60004569F8 /* brick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brick@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +140,12 @@
 				AE2760BC1832702F0046BB9C /* SKBViewController.m */,
 				AE2760BE1832702F0046BB9C /* SKBMyScene.h */,
 				AE2760BF1832702F0046BB9C /* SKBMyScene.m */,
+				AE3B5956183AEB60004569F8 /* brick.png */,
+				AE3B5957183AEB60004569F8 /* brick@2x.png */,
+				AE2760E4183298B50046BB9C /* paddle.png */,
+				AE2760E5183298B50046BB9C /* paddle@2x.png */,
+				AE2760E0183273180046BB9C /* ball.png */,
+				AE2760E1183273180046BB9C /* ball@2x.png */,
 				AE2760C11832702F0046BB9C /* Spaceship.png */,
 				AE2760C31832702F0046BB9C /* Images.xcassets */,
 				AE2760AD1832702F0046BB9C /* Supporting Files */,
@@ -241,9 +259,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3B5959183AEB60004569F8 /* brick@2x.png in Resources */,
 				AE2760B11832702F0046BB9C /* InfoPlist.strings in Resources */,
+				AE2760E3183273180046BB9C /* ball@2x.png in Resources */,
+				AE3B5958183AEB60004569F8 /* brick.png in Resources */,
+				AE2760E2183273180046BB9C /* ball.png in Resources */,
 				AE2760C41832702F0046BB9C /* Images.xcassets in Resources */,
+				AE2760E7183298B50046BB9C /* paddle@2x.png in Resources */,
 				AE2760C21832702F0046BB9C /* Spaceship.png in Resources */,
+				AE2760E6183298B50046BB9C /* paddle.png in Resources */,
 				AE2760BA1832702F0046BB9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +501,7 @@
 				AE2760DC183270300046BB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE2760DD183270300046BB9C /* Build configuration list for PBXNativeTarget "SKBreakoutTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +510,7 @@
 				AE2760DF183270300046BB9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
